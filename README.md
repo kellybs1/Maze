@@ -1,4 +1,4 @@
-# Maze Generation and solving
+# Maze Generation and solution
 
 A Perfect Maze generator using the recursive backtracking method to generate and solve the maze.
 Built primarily from the algorithm description found at: https://en.wikipedia.org/wiki/Maze_generation_algorithm#Recursive_backtracker
