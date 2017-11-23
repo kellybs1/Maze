@@ -11,7 +11,7 @@ Built primarily from the algorithm description found at: https://en.wikipedia.or
 
 ## Source
 
-<a href="https://github.com/kellybs1/Boids/tree/master/kellybs1Maze">/Maze</a>
+<a href="https://github.com/kellybs1/Maze/tree/master/kellybs1Maze">/Maze</a>
 
 ## Algorithm description:
 The individual Boid calculates its velocity based on three basic factors:
