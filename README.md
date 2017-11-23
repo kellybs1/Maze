@@ -8,6 +8,9 @@ Built primarily from the algorithm description found at: https://en.wikipedia.or
 
 <a href="https://github.com/kellybs1/Maze/blob/master/Build/kellybs1Maze.exe?raw=true">/Build/kellybs1Maze.exe</a>
 
+Note: You may need to unblock the unsigned executable: Right click the exe -> Properties, and in the bottom section click the Unblock checkbox and then click OK.
+
+<img src="unblock.png">
 
 ## Source
 
