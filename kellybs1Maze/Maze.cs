@@ -56,7 +56,7 @@ namespace kellybs1Maze
             Stack<MazeCell> visitedStack = new Stack<MazeCell>();           
             MazeCell startCell = grid[startR, startC];
             //set the target (bottom right cell)
-            MazeCell targetCell = grid[gridWallSize - 1, gridWallSize - 1]; //bottom left corner
+            MazeCell targetCell = grid[gridWallSize - 1, gridWallSize - 1]; 
             visitedStack.Push(startCell);
             //now solve
             mazeSolve(canvas, travBrush, solutionBrush, stroke, startCell, targetCell, visitedStack);
