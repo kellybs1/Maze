@@ -49,6 +49,9 @@ namespace kellybs1Maze
             Brush solutionBrush = new SolidBrush(Constants.SOLUTION_FILL);
             Brush travBrush = new SolidBrush(Constants.TRAVERSAL_FILL);
             Pen stroke = new Pen(Constants.WALL_COLOUR);
+            Pen solStroke = new Pen(Constants.SOLUTION_FILL);
+            Pen travStroke = new Pen(Constants.TRAVERSAL_FILL);
+
 
             //Make the initial cell the current cell and mark it as visited
             int startR = 0;
@@ -59,12 +62,12 @@ namespace kellybs1Maze
             MazeCell targetCell = grid[gridWallSize - 1, gridWallSize - 1]; 
             visitedStack.Push(startCell);
             //now solve
-            mazeSolve(canvas, travBrush, solutionBrush, stroke, startCell, targetCell, visitedStack);
+            mazeSolve(canvas, travBrush, solutionBrush, stroke, solStroke, travStroke, startCell, targetCell, visitedStack);
 
         }
 
         //solves the maze
-        private void mazeSolve(Graphics canvas, Brush travBrush, Brush solBrush, Pen stroke, 
+        private void mazeSolve(Graphics canvas, Brush travBrush, Brush solBrush, Pen stroke, Pen solStroke, Pen travStroke, 
             MazeCell currentCell, MazeCell targetCell, Stack<MazeCell> visitedStack)
         {
 
@@ -84,7 +87,7 @@ namespace kellybs1Maze
                     MazeCell nextCell = currentCell.Neighbours[nextIndex];
                     //Push the current cell to the stack
                     visitedStack.Push(currentCell);
-                    drawCell(canvas, solBrush, stroke, currentCell);
+                    drawCell(canvas, solBrush, solStroke, currentCell);
                     //Make the chosen cell the current cell and mark it as visited
                     nextCell.Visited = true;
                     currentCell = nextCell;
@@ -93,7 +96,7 @@ namespace kellybs1Maze
                 {
                     //Pop a cell from the stack
                     MazeCell nextCell = visitedStack.Pop();
-                    drawCell(canvas, travBrush, stroke, currentCell);
+                    drawCell(canvas, travBrush, travStroke, currentCell);
                     //Make it the current cell
                     currentCell = nextCell;
                 }

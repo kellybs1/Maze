@@ -24,8 +24,8 @@ namespace kellybs1Maze
 
         public const int DRAWWAIT = 5;
 
-        public static Color TRAVERSAL_FILL = Color.FromArgb(198, 196, 196);
-        public static Color SOLUTION_FILL = Color.FromArgb(161, 244, 159);
+        public static Color TRAVERSAL_FILL = Color.FromArgb(148, 198, 196, 196);
+        public static Color SOLUTION_FILL = Color.FromArgb(148, 161, 244, 159);
         public static Color WALL_COLOUR = Color.Black;
 
         //all directions indexes are clockwise 
