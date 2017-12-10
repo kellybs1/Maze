@@ -102,7 +102,7 @@ namespace kellybs1Maze
                 }
             }
             //draw the end
-            drawCell(canvas, solBrush, stroke, currentCell);
+            drawCell(canvas, solBrush, solStroke, currentCell);
         }
 
 
